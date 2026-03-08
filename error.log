@@ -1,0 +1,540 @@
+﻿coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒפנ encrypt with Dotenvx: https://dotenvx.com
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 67ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  specify custom .env file path with { path: '/custom/path/.env' }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒ¢í∩╕ן auth for agents: https://vestauth.com
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 48ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  enable debug logging with { debug: true }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  enable debug logging with { debug: true }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 53ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  load multiple .env files with { path: ['.env.local', '.env'] }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  enable debug logging with { debug: true }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 54ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒפנ prevent building .env in docker: https://dotenvx.com/prebuild
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒפנ prevent committing .env to code: https://dotenvx.com/precommit
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 52ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  load multiple .env files with { path: ['.env.local', '.env'] }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒפנ encrypt with Dotenvx: https://dotenvx.com
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 54ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  suppress all logs with { quiet: true }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒפנ prevent building .env in docker: https://dotenvx.com/prebuild
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 52ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒ¢á∩╕ן  run anywhere with `dotenvx run -- yourcommand`
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒפנ encrypt with Dotenvx: https://dotenvx.com
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 52ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  specify custom .env file path with { path: '/custom/path/.env' }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  load multiple .env files with { path: ['.env.local', '.env'] }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 52ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: Γתש∩╕ן  enable debug logging with { debug: true }
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒפנ encrypt with Dotenvx: https://dotenvx.com
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | 
+coupon_backend  | Γ£פ Generated Prisma Client (v7.4.2) to ./node_modules/@prisma/client in 53ms
+coupon_backend  | 
+coupon_backend  | Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+coupon_backend  | 
+coupon_backend  | 
+coupon_backend  | [dotenv@17.3.1] injecting env (0) from .env -- tip: ≡ƒ¢á∩╕ן  run anywhere with `dotenvx run -- yourcommand`
+coupon_backend  | Loaded Prisma config from prisma.config.js.
+coupon_backend  | 
+coupon_backend  | Prisma schema loaded from prisma/schema.prisma.
+coupon_backend  | Datasource "db": MySQL database "coupon_db" at "db:3306"
+coupon_backend  | 
+coupon_backend  | The database is already in sync with the Prisma schema.
+coupon_backend  | 
+coupon_backend  | /app/node_modules/@prisma/client/runtime/client.js:70
+coupon_backend  | ${n}`}var Ul=require("@prisma/client-runtime-utils");function Bl(e){return e.length===0?Promise.resolve([]):new Promise((t,r)=>{let n=new Array(e.length),i=null,o=!1,s=0,a=()=>{o||(s++,s===e.length&&(o=!0,i?r(i):t(n)))},l=u=>{o||(o=!0,r(u))};for(let u=0;u<e.length;u++)e[u].then(c=>{n[u]=c,a()},c=>{if(!(0,Ul.hasBatchIndex)(c)){l(c);return}c.batchRequestIdx===u?l(c):(i||(i=c),a())})})}var Bt=F("prisma:client");typeof globalThis=="object"&&(globalThis.NODE_CLIENT=!0);var Im={requestArgsToMiddlewareArgs:e=>e,middlewareArgsToRequestArgs:e=>e},Om=Symbol.for("prisma.client.transaction.id"),Nm={id:0,nextId(){return++this.id}};function zl(e){class t{_originalClient=this;_runtimeDataModel;_requestHandler;_connectionPromise;_disconnectionPromise;_engineConfig;_accelerateEngineConfig;_clientVersion;_errorFormat;_tracingHelper;_previewFeatures;_activeProvider;_globalOmit;_extensions;_engine;_appliedParent;_createPrismaPromise=di();constructor(n){if(!n)throw new w.PrismaClientInitializationError("`PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:\n\n```\nnew PrismaClient({\n  ...\n})\n```\n\nor\n\n```\nconstructor() {\n  super({ ... });\n}\n```\n          ",hi);e=n.__internal?.configOverride?.(e)??e,jl(n,e);let i=new Gl.EventEmitter().on("error",()=>{});this._extensions=Be.empty(),this._previewFeatures=e.previewFeatures,this._clientVersion=e.clientVersion??hi,this._activeProvider=e.activeProvider,this._globalOmit=n?.omit,this._tracingHelper=kl();let o;if(n.adapter){o=n.adapter;let s=e.activeProvider==="postgresql"||e.activeProvider==="cockroachdb"?"postgres":e.activeProvider;if(o.provider!==s)throw new w.PrismaClientInitializationError(`The Driver Adapter \`${o.adapterName}\`, based on \`${o.provider}\`, is not compatible with the provider \`${s}\` specified in the Prisma schema.`,this._clientVersion)}try{let s=n??{},l=(s.__internal??{}).debug===!0;if(l&&F.enable("prisma:client"),s.errorFormat?this._errorFormat=s.errorFormat:process.env.NODE_ENV==="production"?this._errorFormat="minimal":process.env.NO_COLOR?this._errorFormat="colorless":this._errorFormat="colorless",this._runtimeDataModel=e.runtimeDataModel,this._engineConfig={enableDebugLogs:l,logLevel:s.log&&Ol(s.log),logQueries:s.log&&!!(typeof s.log=="string"?s.log==="query":s.log.find(u=>typeof u=="string"?u==="query":u.level==="query")),compilerWasm:e.compilerWasm,clientVersion:e.clientVersion,previewFeatures:this._previewFeatures,activeProvider:e.activeProvider,inlineSchema:e.inlineSchema,tracingHelper:this._tracingHelper,transactionOptions:{maxWait:s.transactionOptions?.maxWait??2e3,timeout:s.transactionOptions?.timeout??5e3,isolationLevel:s.transactionOptions?.isolationLevel},logEmitter:i,adapter:o,accelerateUrl:s.accelerateUrl,sqlCommenters:s.comments,parameterizationSchema:e.parameterizationSchema,runtimeDataModel:e.runtimeDataModel},this._accelerateEngineConfig=Object.create(this._engineConfig),this._accelerateEngineConfig.accelerateUtils={resolveDatasourceUrl:()=>{if(s.accelerateUrl)return s.accelerateUrl;throw new w.PrismaClientInitializationError(`\`accelerateUrl\` is required when using \`@prisma/extension-accelerate\`:
+coupon_backend  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+coupon_backend  | 
+coupon_backend  | PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | new PrismaClient({
+coupon_backend  |   ...
+coupon_backend  | })
+coupon_backend  | ```
+coupon_backend  | 
+coupon_backend  | or
+coupon_backend  | 
+coupon_backend  | ```
+coupon_backend  | constructor() {
+coupon_backend  |   super({ ... });
+coupon_backend  | }
+coupon_backend  | ```
+coupon_backend  |           
+coupon_backend  |     at new t (/app/node_modules/@prisma/client/runtime/client.js:70:960)
+coupon_backend  |     at Object.<anonymous> (/app/dist/db.js:4:16)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+coupon_backend  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+coupon_backend  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+coupon_backend  |     at Module._load (node:internal/modules/cjs/loader:1091:12)
+coupon_backend  |     at Module.require (node:internal/modules/cjs/loader:1289:19)
+coupon_backend  |     at require (node:internal/modules/helpers:182:18)
+coupon_backend  |     at Object.<anonymous> (/app/dist/controllers/productController.js:7:30)
+coupon_backend  |     at Module._compile (node:internal/modules/cjs/loader:1521:14) {
+coupon_backend  |   clientVersion: '7.4.2',
+coupon_backend  |   errorCode: undefined,
+coupon_backend  |   retryable: undefined
+coupon_backend  | }
+coupon_backend  | 
+coupon_backend  | Node.js v20.20.1
